@@ -1,4 +1,5 @@
 require 'json_expressions/matcher'
+require 'json_expressions/match_helpers'
 
 module JsonExpressions
   WILDCARD_MATCHER = Object.new
