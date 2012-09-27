@@ -10,5 +10,9 @@ module JsonExpressions
         other.nil? || @matcher.send(method, other)
       end
     end
+
+    def to_s
+      "nil or #{@matcher}"
+    end
   end
 end
