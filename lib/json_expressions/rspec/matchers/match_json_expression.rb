@@ -17,6 +17,10 @@ module JsonExpressions
           @expected =~ @target
         end
 
+        def description
+          "match JSON expression #{@expected}"
+        end
+
         def failure_message_for_should
           "expected #{@target.inspect} to match JSON expression #{@expected.inspect}\n" + @expected.last_error
         end
